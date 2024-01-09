@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tt">Yummy Food Recips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="head">
+        <h1 class="food">Yummy Food Recipes !</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li> <a href="#">Recipes</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2 id="d1"> Welcome to Yummy Food Recipes</h2>
+            <p id="d2">Discover the joy of cooking with our delicious recipes !
+            learn how to cook and enjoy your cooking time ! </p>
+        </div>
+    </section>
+    <section id="featured-recipes">
+        <div class="container">
+            <div class="recipe-card" onclick="showRecipeDetails(1)">
+                <!-- showReciDetails is a js function worked with a id argument provides by another function called Generate ID-->
+                <img src="./assets/recipes/beef.jpeg" alt="Beef">
+                <h3> Delicious Beef plate</h3>
+            </div>
+        </div>
+        <div class="recipe-card" onclick="showRecipeDetails(2)">
+            <div>
+                <img src="./assets/recipes/chiken.webp" alt="chicken">
+                <h3> Delicious chiken plate</h3>
+            </div>
+        </div>
+        <div class="recipe-card" onclick="showRecipeDetails(3)">
+            <img src="./assets/recipes/dessert.jpeg" alt="Dessert">
+            <h3> Delicious Dessert</h3>
+        </div>
+        <div class="recipe-card" onclick="showRecipeDetails(4)">
+            <img src="./assets/recipes/break.jpg" alt="Breakfast">
+            <h3>Delicious Breakfast</h3>
+        </div>
+    </section>
+    <section id="recipe-details" class="hidden">
+        <div class="container">
+            <button onclick="hideRecipeDetails()">Back to Recipes</button>
+            <div id="recipe-content">
+                <!--recipe details will be load by a js function -->
+            </div>
+        </div>
+    </section>
+    <footer class="ftr">
+        <p> 2024 <a href="#" style="color:blueviolet;">Yummy Food Recipes</a>. All rights <a href="#" style="color:aqua;"> reserved</a>.</p>
+
+    </footer>
+    <script src="index.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        
+    </script>
+    
+</body>
+</html>

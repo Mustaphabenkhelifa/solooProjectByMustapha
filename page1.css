@@ -1,0 +1,77 @@
+
+body {
+    background-image:url('./assets/recipes/wood.jpg');
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.food {
+    font-family: Arial, Helvetica, sans-serif;
+    color: burlywood;
+}
+
+.head {
+    background-image:url('./assets/pic.webp');
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+ul {
+    color:aqua;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    background-color: bisque;
+}
+
+#hero {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#featured-recipes {
+    padding: 50px 0;
+    text-align: center;
+}
+img {
+    width: 50vh;
+}
+
+.recipe-card {
+    border: 4px solid black;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+h3{
+    color:whitesmoke;
+    text-align: center;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+#recipe-details {
+    display: none;
+    padding: 50px 0;
+}
+
+footer {
+    background-color:bisque;
+    text-align: center;
+    padding: 20px 0;
+}
