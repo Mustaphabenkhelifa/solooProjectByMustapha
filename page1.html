@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="tt">Yummy Food Recips</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page1.css">
 </head>
 <body>
     <header class="head">
         <h1 class="food">Yummy Food Recipes !</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li> <a href="#">Recipes</a></li>
-                <li> <a href="#">Blog</a></li>
-                <li> <a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <section id="hero">
         <div class="container">
@@ -30,27 +22,27 @@
             <div class="recipe-card" onclick="showRecipeDetails(1)">
                 <!-- showReciDetails is a js function worked with a id argument provides by another function called Generate ID-->
                 <img src="./assets/recipes/beef.jpeg" alt="Beef">
-                <h3> Delicious Beef plate</h3>
+                <h3 id=""> <a href="page1.html">Delicious Beef plate </a></h3>
             </div>
         </div>
         <div class="recipe-card" onclick="showRecipeDetails(2)">
             <div>
                 <img src="./assets/recipes/chiken.webp" alt="chicken">
-                <h3> Delicious chiken plate</h3>
+                <h3> <a href="page1.html">Delicious chiken plate </a></h3>
             </div>
         </div>
         <div class="recipe-card" onclick="showRecipeDetails(3)">
             <img src="./assets/recipes/dessert.jpeg" alt="Dessert">
-            <h3> Delicious Dessert</h3>
+            <h3> <a href="page1.html">Delicious Dessert </a></h3>
         </div>
         <div class="recipe-card" onclick="showRecipeDetails(4)">
             <img src="./assets/recipes/break.jpg" alt="Breakfast">
-            <h3>Delicious Breakfast</h3>
+            <h3> <a href="page1.html">Delicious Breakfast </a></h3>
         </div>
     </section>
     <section id="recipe-details" class="hidden">
         <div class="container">
-            <button onclick="hideRecipeDetails()">Back to Recipes</button>
+            <button class="btt" onclick="hideRecipeDetails()">Back to Recipes</button>
             <div id="recipe-content">
                 <!--recipe details will be load by a js function -->
             </div>
@@ -63,6 +55,12 @@
     <script src="index.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
     <script>
+        $('h3').on('click',function(){
+            $('#recipe-content').show()
+        })
+        $('.btt').on('click',function(){
+            $("#recipe-content").hide()
+        })
         
     </script>
     
