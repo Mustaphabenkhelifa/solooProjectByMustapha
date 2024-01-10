@@ -70,8 +70,27 @@ h3{
     padding: 50px 0;
 }
 
-footer {
-    background-color:bisque;
+
+#ddd {
+    width:50vh;
+}
+.cc,.hd1,.hd2 ,.recipe-card{
     text-align: center;
-    padding: 20px 0;
+}
+.cc {
+    background-color: antiquewhite;
+    border:1px solid black;
+    border-radius: 12vh;
+    margin:100px;
+}
+.hd2 {
+    color:aqua;
+}
+.hd1 {
+    background-color: #ffffff;
+}
+footer {
+    height: 7vh;
+    background-color:antiquewhite;
+    text-align: center;
 }
